@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IGP - KEYCHAINS</title>
+
+ 
+  <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/buy.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" href="./assets/Link/hero-banner.jpg" as="image">
+
+</head>
+
+<body id="top">
+  <div id="loading-screen">
+    <img src="assets/Link/pin-cl2.png" alt="link" id="loading-logo">
+    <div id="typewriter-words"><strong style="display: inline; color: #E3AE10;">LEX </strong><strong>is on it!^_^</strong></div>
+</div>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="logo3.png" width="160" height="50" alt="LINX.exe logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="1.png" width="190" height="35" alt="Footcap logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sticker.html" class="navbar-link">Stickers</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pins.html" class="navbar-link">Pins</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="keychain.html" class="navbar-link">Keychains</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="order.html" class="navbar-link" id="reservation-link">Check Out</a>
+          </li>
+        </ul>
+
+        <ul class="nav-action-list">
+          <li>
+            <li>
+              <div class="search">
+                  <div class="icon"></div>
+                  <div class="input">
+                      <input type="text" placeholder="Search" id="mysearch">
+                  </div>
+                  <span class="clear" onclick="document.getElementById('mysearch').value ='' "></span>
+              </div>
+          </li>
+          
+          <li>
+            <a href="login.html" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+
+          <li>
+            <button class="nav-action-btn" id="wishlistBtn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Wishlist</span>
+              <data class="nav-action-badge" value="0" aria-hidden="true" id="wishlistCounter">0</data>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="cartBtn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Basket: <strong>$<span id="cartTotal">Php 0.00</span></strong></span>
+              <data class="nav-action-badge" value="0" aria-hidden="true" id="cartCounter">0</data>
+            </button>
+          </li>
+        </ul>
+        <ul>
+        <div class="cart-window" id="cartWindow">
+          <button class="close-btn" id="closeCartBtn">&times;</button>
+          <h3>Shopping Cart</h3>
+          <ul class="cart-items" id="cartItems">
+            <li>LEX Christmas Special</li>
+            <li>LEX CLASSICS</li>
+            <li>LINK.exe CICT Fundays</li>
+            <li>U-Days Superheroes</li>
+            <li>LEX in SALAKOT</li>
+            <li>Maria Labooth Exclusive</li>
+          </ul>
+          <div class="cart-actions">
+            <button id="clearCartBtn">Clear Cart</button>
+            <button id="checkoutBtn" onclick="location.href='order.html'">Checkout</button>
+          </div>
+        </div>
+        
+        <div class="wishlist-window" id="wishlistWindow">
+          <button class="close-btn" id="closeWishlistBtn">&times;</button>
+          <h3>Wishlist</h3>
+          <ul class="wishlist-items" id="wishlistItems">
+            <li>LEX Christmas Special</li>
+            <li>LEX CLASSICS</li>
+            <li>LINK.exe CICT Fundays</li>
+            <li>U-Days Superheroes</li>
+            <li>LEX in SALAKOT</li>
+            <li>Maria Labooth Exclusive</li>
+          </ul>
+          <div class="wishlist-actions">
+            <button id="clearWishlistBtn">Clear Wishlist</button>
+            <button id="checkoutWishlistBtn" onclick="location.href='order.html'">Checkout</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <section class="section hero" style="background-image: url('./assets/Link/keychain-banner.png')">
+        <div class="container">
+          <h1 class="h1 hero-title">
+            It's not just a <strong id="merch" style="display: inline; color: #E3AE10;">Keychain</strong><strong> It's <span style="color:#0096BD; display: inline; ">LEX KEYCHAINS!</strong>
+          </h1>
+          
+          <p class="hero-text">
+            Our Keychains are our newest addition to the Merch Line we have. Come and explore some of our designs by our creative designers. Watch out for more incoming designs!
+          </p>
+          <a href="#maria-labooth-section">
+          <button class="btn btn-primary" onclick="navigateToSection()">
+            <span>Buy Now</span>
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Keychains</h2>
+
+          <ul class="filter-list">
+
+              <li>
+                <a href="#all" class="filter-btn">All</a>
+              </li>
+                <a href="#maria-labooth-section" class="filter-btn">Classics</a>
+              </li>
+            </section>
+              
+
+      <!--Maria LAbooth-->
+  <section id="maria-labooth-section">
+      <section class="section special">
+        <div class="container">
+
+          <div class="special-banner" style="background-image: url('./assets/link/up3.png')">
+            <h2 class="h3 banner-title">Classics</h2>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">Classic Keychain</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/link/key-ml1.png" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'Let's Overthink Together' Keychain</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml2.png" width="312" height="350" loading="lazy"
+                      alt="Leather Mens Slipper" class="image-contain">
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'Coffee Fuel for Success' Keychain</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml3.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'WVSU DABEST kag Number One' Keychain (Brown Ver.)</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+              
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml4.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'WVSU DABEST kag Number One' Keychain (Blue Ver.)</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml5.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'WVSU DABEST kag Wala Tulog' Keychain</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml6.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'Shine the best Taga-WEST' Keychain</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml7.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Close Eyes Smile' Keychain</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml8.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Original Pose' Keychain</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/key-ml9.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                   <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Keychain</a> /
+                      <a href="#" class="card-cat-link">Crystal</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'BACK' Keychain</a>
+                    </h3>
+
+                    <data class="card-price" value="35">Php 35</data>
+
+                  </div>
+
+                </div>
+              </li>
+          </ul>
+        </div>
+      </section>
+</section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/linkexeofficial" target="_blank" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.tiktok.com/@link.exeofficial" target="_blank" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/linkexeofficial/" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  CICT Building, West Visayas State University, Lapaz, Iloilo City
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+639474504057" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+639474504057</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:link.exe@wvsu.edu.ph" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">link.exe@wvsu.edu.ph</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">About Us</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <span class="footer-link-text">LINK.exe, a special interest organization at West Visayas State University - College of ICT, excels in photography, videography, and multimedia, using technology for good. Known for their innovative approach and commitment to excellence, they stand out in the tech community.</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Opening Time</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Mon - Tue:</th>
+
+                  <td class="table-data">8AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Wed:</th>
+
+                  <td class="table-data">8AM - 7PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Fri:</th>
+
+                  <td class="table-data">7AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sat:</th>
+
+                  <td class="table-data">9AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sun:</th>
+
+                  <td class="table-data">Closed</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Get latest news about upcoming merch and acquire partnership.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="https://www.facebook.com/linkexeofficial" class="copyright-link">LINK.exe</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+  <script src="./assets/js/script-k.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

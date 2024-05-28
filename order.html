@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINK.exe - IGP</title>
+
+ 
+  <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" href="./assets/Link/hero-banner.jpg" as="image">
+
+</head>
+
+<body id="top">
+  <div id="loading-screen">
+    <img src="assets/Link/pin-cl2.png" alt="link" id="loading-logo">
+    <div id="typewriter-words"><strong style="display: inline; color: #E3AE10;">LEX </strong><strong>is on it!^_^</strong></div>
+</div>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="logo3.png" width="160" height="50" alt="Link.exe logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="1.png" width="190" height="50" alt="Link.exe logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sticker.html" class="navbar-link">Stickers</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pins.html" class="navbar-link">Pins</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="keychain.html" class="navbar-link">Keychains</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="order.html" class="navbar-link" id="reservation-link">Check Out</a>
+          </li>
+        </ul>
+
+        <ul class="nav-action-list">
+          <li>
+            <li>
+              <div class="search">
+                  <div class="icon"></div>
+                  <div class="input">
+                      <input type="text" placeholder="Search" id="mysearch">
+                  </div>
+                  <span class="clear" onclick="document.getElementById('mysearch').value ='' "></span>
+              </div>
+          </li>
+          
+        
+
+          <li>
+            <a href="login.html" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="wishlistBtn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Wishlist</span>
+              <data class="nav-action-badge" value="0" aria-hidden="true" id="wishlistCounter">0</data>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="cartBtn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Basket: <strong>$<span id="cartTotal">Php 0.00</span></strong></span>
+              <data class="nav-action-badge" value="0" aria-hidden="true" id="cartCounter">0</data>
+            </button>
+          </li>
+        </ul>
+        <ul>
+        <div class="cart-window" id="cartWindow">
+          <button class="close-btn" id="closeCartBtn">&times;</button>
+          <h3>Shopping Cart</h3>
+          <ul class="cart-items" id="cartItems">
+            <li>LEX Christmas Special</li>
+            <li>LEX CLASSICS</li>
+            <li>LINK.exe CICT Fundays</li>
+            <li>U-Days Superheroes</li>
+            <li>LEX in SALAKOT</li>
+            <li>Maria Labooth Exclusive</li>
+          </ul>
+          <div class="cart-actions">
+            <button id="clearCartBtn">Clear Cart</button>
+            <button id="checkoutBtn" onclick="location.href='order.html'">Checkout</button>
+          </div>
+        </div>
+        
+        <div class="wishlist-window" id="wishlistWindow">
+          <button class="close-btn" id="closeWishlistBtn">&times;</button>
+          <h3>Wishlist</h3>
+          <ul class="wishlist-items" id="wishlistItems">
+            <li>LEX Christmas Special</li>
+            <li>LEX CLASSICS</li>
+            <li>LINK.exe CICT Fundays</li>
+            <li>U-Days Superheroes</li>
+            <li>LEX in SALAKOT</li>
+            <li>Maria Labooth Exclusive</li>
+          </ul>
+          <div class="wishlist-actions">
+            <button id="clearWishlistBtn">Clear Wishlist</button>
+            <button id="checkoutWishlistBtn" onclick="location.href='order.html'">Checkout</button>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <main>
+    <article>
+
+            <section class="section hero" style="background-image: url('./assets/Link/hero-banner.png')">
+                <div class="container">
+                  <h1 class="h1 hero-title">
+                    Pleas wait for your <strong id="merch" style="display: inline; color: #E3AE10;">Merch</strong><strong> To be <span style="color:#0096BD; display: inline; ">Confirmed!</strong>
+                  </h1>
+                  <p class="hero-text">
+                    Please wait for your order to be delivered or confirmed. You can get it at our address or delivered right through were you are at the time!
+                  </p>
+                  <a href="index.html">
+                    <button class="btn btn-primary">
+                      <span>Back to Home</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                  
+        </div>
+      </section>
+      <section class="section service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" width="53" height="28" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Freebies</h3>
+
+                  <p class="card-text">
+                    All orders over <span>Php 200</span>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" width="43" height="35" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Quick Payment</h3>
+
+                  <p class="card-text">
+                    100% secure payment
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Free Returns</h3>
+
+                  <p class="card-text">
+                    Money back in 30 days, if product found defective
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-4.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">24/7 Open</h3>
+
+                  <p class="card-text">
+                    Order in your most convinient time
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section insta-post">
+
+        <ul class="insta-post-list has-scrollbar">
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid02DhyML1YPKQCg669vkouSeAwRAU1mfz2jRzaNqP6ufUwk7fwyBAV3n2n64mGz8DuRl" class="insta-post-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta2.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid04MXWQafyYJvHQHxjtzz7NhyoDcTiJaUnQNdzwPnmrH7ovKejCJWf3YSfuoU3KMsvl" target="_blank" class="insta-post-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta3.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid035BuTV9runLRDhiCY7o65hb8iYQQ6GjVw3m7s3rQjAxdwo1NTv27vxvHegR8bZkK3l" target="_blank" class="insta-post-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta4.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid02tNVXqbGaTdisf4tcdnuNNWeapJcgqWKd6a1XusV8yVgRFtJVuZ1UwdhqFDxeqijml" target="_blank" class="insta-post-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta5.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid028U9eNBsNbQfF4CmmW8cooqrCEatHBCUPmckfzwjSKky7yskZiHyBc5Kn6PdymrUDl" target="_blank" class="insta-post-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta6.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid02tZdctGFb9r6Lkt6vc2EPRKSpaYnwRaEAtuaw9xL4obv96c86mhK63eCdLoG3CvSXl" target="_blank" class="insta-post-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta7.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid04MXWQafyYJvHQHxjtzz7NhyoDcTiJaUnQNdzwPnmrH7ovKejCJWf3YSfuoU3KMsvl" target="_blank" class="insta-post-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/link/insta8.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.facebook.com/linkexeofficial/posts/pfbid034gRChCSfHRzn43E9bgTb4LbiezW4AVGPNccmGoRXU5EH6xNiJ3R9TPQ1ikMw2rHPl" target="_blank" class="insta-post-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/linkexeofficial" target="_blank" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.tiktok.com/@link.exeofficial" target="_blank" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/linkexeofficial/" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  CICT Building, West Visayas State University, Lapaz, Iloilo City
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+639474504057" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+639474504057</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:link.exe@wvsu.edu.ph" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">link.exe@wvsu.edu.ph</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">About Us</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <span class="footer-link-text">LINK.exe, a special interest organization at West Visayas State University - College of ICT, excels in photography, videography, and multimedia, using technology for good. Known for their innovative approach and commitment to excellence, they stand out in the tech community.</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Opening Time</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Mon - Tue:</th>
+
+                  <td class="table-data">8AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Wed:</th>
+
+                  <td class="table-data">8AM - 7PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Fri:</th>
+
+                  <td class="table-data">7AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sat:</th>
+
+                  <td class="table-data">9AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sun:</th>
+
+                  <td class="table-data">Closed</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Get latest news about upcoming merch and acquire partnership.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="https://www.facebook.com/linkexeofficial" class="copyright-link">LINK.exe</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script-ch.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

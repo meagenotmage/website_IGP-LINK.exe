@@ -1,0 +1,2574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IGP - STICKER</title>
+
+ 
+  <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/buy.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" href="./assets/Link/hero-banner.jpg" as="image">
+
+</head>
+
+<body id="top">
+  <div id="loading-screen">
+    <img src="assets/Link/pin-cl2.png" alt="link" id="loading-logo">
+    <div id="typewriter-words"><strong style="display: inline; color: #E3AE10;">LEX </strong><strong>is on it!^_^</strong></div>
+</div>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="logo3.png" width="160" height="50" alt="LINX.exe logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="1.png" width="190" height="50" alt="Footcap logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sticker.html" class="navbar-link">Stickers</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pins.html" class="navbar-link">Pins</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="keychain.html" class="navbar-link">Keychains</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="order.html" class="navbar-link" id="reservation-link">Check Out</a>
+          </li>
+        </ul>
+
+        <ul class="nav-action-list">
+          <li>
+            <li>
+              <div class="search">
+                  <div class="icon"></div>
+                  <div class="input">
+                      <input type="text" placeholder="Search" id="mysearch">
+                  </div>
+                  <span class="clear" onclick="document.getElementById('mysearch').value ='' "></span>
+              </div>
+          </li>
+          
+
+          <li>
+            <a href="login.html" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="wishlistBtn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Wishlist</span>
+              <data class="nav-action-badge" value="0" aria-hidden="true" id="wishlistCounter">0</data>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="cartBtn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Basket: <strong>$<span id="cartTotal">Php 0.00</span></strong></span>
+              <data class="nav-action-badge" value="0" aria-hidden="true" id="cartCounter">0</data>
+            </button>
+          </li>
+        </ul>
+        <ul>
+        <div class="cart-window" id="cartWindow">
+          <button class="close-btn" id="closeCartBtn">&times;</button>
+          <h3>Shopping Cart</h3>
+          <ul class="cart-items" id="cartItems">
+            <li>LEX Christmas Special</li>
+            <li>LEX CLASSICS</li>
+            <li>LINK.exe CICT Fundays</li>
+            <li>U-Days Superheroes</li>
+            <li>LEX in SALAKOT</li>
+            <li>Maria Labooth Exclusive</li>
+          </ul>
+          <div class="cart-actions">
+            <button id="clearCartBtn">Clear Cart</button>
+            <button id="checkoutBtn" onclick="location.href='order.html'">Checkout</button>
+          </div>
+        </div>
+        
+        <div class="wishlist-window" id="wishlistWindow">
+          <button class="close-btn" id="closeWishlistBtn">&times;</button>
+          <h3>Wishlist</h3>
+          <ul class="wishlist-items" id="wishlistItems">
+            <li>LEX Christmas Special</li>
+            <li>LEX CLASSICS</li>
+            <li>LINK.exe CICT Fundays</li>
+            <li>U-Days Superheroes</li>
+            <li>LEX in SALAKOT</li>
+            <li>Maria Labooth Exclusive</li>
+          </ul>
+          <div class="wishlist-actions">
+            <button id="clearWishlistBtn">Clear Wishlist</button>
+            <button id="checkoutWishlistBtn" onclick="location.href='order.html'">Checkout</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <section class="section hero" style="background-image: url('./assets/Link/sticker-banner.png')">
+        <div class="container">
+          <h1 class="h1 hero-title">
+            It's not just a <strong id="merch" style="display: inline; color: #E3AE10;">Sticker</strong><strong> It's a <span style="color:#0096BD; display: inline; ">STICKER LEX!</strong>
+          </h1>
+          
+          <p class="hero-text">
+            Come and browse along a wide array of selection of our sticker. We offer a wide range of styles and artistic designs. We also offer partnerships and commissions.
+          </p>
+        <a href="#classic-lex-section">
+          <button class="btn btn-primary" onclick="navigateToSection()">
+            <span>Buy Now</span>
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </a>
+        </div>
+      </section>
+
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Stickers</h2>
+
+          <ul class="filter-list">
+
+              <li>
+                <a href="#all" class="filter-btn">All</a>
+              </li>
+              <li>
+                <a href="#classic-lex-section" class="filter-btn">Classic Lex</a>
+              </li>
+              <li>
+                <a href="#newest-lex-section" class="filter-btn">Newest Lex</a>
+              </li>
+              <li>
+                <a href="#maria-labooth-section" class="filter-btn">Maria LaBOOTH</a>
+              </li>
+              <li>
+                <a href="#valinktines-section" class="filter-btn">VaLINKtines</a>
+              </li>
+            </ul>
+
+
+
+<!--Classic Lex-->
+<section id="classic-lex-section">
+      <section class="section special">
+        <div class="container">
+
+          <div class="special-banner" style="background-image: url('./assets/link/classic.png')">
+            <h2 class="h3 banner-title">LEX Classics</h2>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">Lex Classics</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/link/classic2.png" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+                      </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Hand Heart' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic3.png" width="312" height="350" loading="lazy"
+                      alt="Leather Mens Slipper" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'CICTZEN Flag' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic6.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Pride Flag' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+              
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic4.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Need MwaMwa' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic7.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Kakapoy' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic8.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Uwu Box' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic9.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Huh? Backlogs' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic10.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+                      </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Laptop LEX</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic11.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+                      </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Stressed? Same' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic12.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+                      </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Acads What?' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic13.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Melkti' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic14.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Shy aq' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic15.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">WEBSU CAT 'PURRR' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic16.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'Huh? Backlogs What?' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/classic1.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Ignited' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/Link/classic5.png" width="312" height="350" loading="lazy"
+                      alt="wala tuition " class="image-contain">
+
+                    <div class="card-badge"> -5%</div>
+
+                    <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Wala Tuition' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15 <del>Php 20</del></data>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      
+
+
+ <!--NEW LEX-->
+
+ <section id="newest-lex-section">
+      <section class="section special">
+        <div class="container">
+
+          <div class="special-banner" style="background-image: url('./assets/link/newst.png')">
+            <h2 class="h3 banner-title">Newest Lex</h2>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">Newest Lex</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/link/new1.png" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Manifesting' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new2.png" width="312" height="350" loading="lazy"
+                      alt="Leather Mens Slipper" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX '??' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new3.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Hmm...' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+              
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new4.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Esophagus' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new5.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Mama ko?' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new6.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Coffee is Life' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new7.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'It's Not Gwenchana' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new8.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'itulog ang backlogs' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new9.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Lapyo FR' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new10.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'TWURK' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new11.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Behave' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/new12.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Doll' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+          </div>
+
+        </div>
+      </section>
+</section>
+
+
+      <!--Maria LAbooth-->
+  <section id="maria-labooth-section">
+      <section class="section special">
+        <div class="container">
+
+          <div class="special-banner" style="background-image: url('./assets/link/ml.png')">
+            <h2 class="h3 banner-title">Maria LaBOOTH</h2>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">Maria LaBOOTH</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/link/ml1.png" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX Labo Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/ml2.png" width="312" height="350" loading="lazy"
+                      alt="Leather Mens Slipper" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">'Laboon ta ka Gha?!' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/ml3.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Maria Labo 'Transform'</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+              
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/ml4.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Maria Labo 'Normal'</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/ml5.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Go Ate Maria!!' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/ml6.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Maria Labo 'Binangon' </a>
+                    </h3>
+
+                    <data class="card-price" value="15">Php 15</data>
+
+                  </div>
+
+                </div>
+              </li>
+          </ul>
+        </div>
+      </section>
+</section>
+
+
+      <!--VaLINKtines-->
+  <section id="valinktines-section">
+      <section class="section special">
+        <div class="container">
+
+          <div class="special-banner" style="background-image: url('./assets/link/vl.png')">
+            <h2 class="h3 banner-title">VaLINKtines</h2>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">VaLINKtines</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/link/vl1.PNG" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Red String 'Right'</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl2.PNG" width="312" height="350" loading="lazy"
+                      alt="Leather Mens Slipper" class="image-contain">
+
+                      <div class="card-badge">Restocked</div>
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Red String 'Left'</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl3.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Cheeky Dog 'Right'</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+              
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl4.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Cheeky Dog 'Left'</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl5.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Taga-West 'Male'</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl6.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Tage-Labyu 'Male' </a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl7.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Taga-West 'Female'</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl8.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Taga-Labyu 'Female'</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/link/vl9.png" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">LEX 'Wanna Form a LINK?' Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/link/vl10.PNG" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">Restocked</div>
+
+                    <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Anime Sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="assets/link/vl11.png" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                     <ul class="card-action-list">
+
+                      <ul class="card-action-list">
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1" onclick="addToCart()">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2" onclick="addToWishlist()">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+                        <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                      </li>
+                      
+  
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Sticker</a> /
+                      <a href="#" class="card-cat-link">Matte</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">You are my cream to my oreo sticker</a>
+                    </h3>
+
+                    <data class="card-price" value="10">Php 10</data>
+
+                  </div>
+
+                </div>
+              </li>
+          </ul>
+        </div>
+      </section>
+</section>
+
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/linkexeofficial" target="_blank" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.tiktok.com/@link.exeofficial" target="_blank" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/linkexeofficial/" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  CICT Building, West Visayas State University, Lapaz, Iloilo City
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+639474504057" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+639474504057</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:link.exe@wvsu.edu.ph" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">link.exe@wvsu.edu.ph</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About Us</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <span class="footer-link-text">LINK.exe, a special interest organization at West Visayas State University - College of ICT, excels in photography, videography, and multimedia, using technology for good. Known for their innovative approach and commitment to excellence, they stand out in the tech community.</span>
+              </a>
+            </li>
+
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Opening Time</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Mon - Tue:</th>
+
+                  <td class="table-data">8AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Wed:</th>
+
+                  <td class="table-data">8AM - 7PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Fri:</th>
+
+                  <td class="table-data">7AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sat:</th>
+
+                  <td class="table-data">9AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sun:</th>
+
+                  <td class="table-data">Closed</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Get latest news about upcoming merch and acquire partnership.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="https://www.facebook.com/linkexeofficial" class="copyright-link">LINK.exe</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+  <script src="./assets/js/script-s.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
